@@ -216,7 +216,7 @@ end
 local function verifyPremiumKey(key)
     local payload = { key = key, hwid = getSafeHwid() }
     local response = SafeRequest({
-        Url = "https://willianparadox.loca.lt/api/verify", 
+        Url = "https://talks-orcin.vercel.app/api/verify", 
         Method = "POST",
         Headers = {
             ["Content-Type"] = "application/json",
